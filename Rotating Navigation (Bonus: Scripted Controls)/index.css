@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color:#333;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    margin: 0px;
+}
+
+ul {
+    position: absolute;
+    bottom: 20px;
+}
+
+li {
+    cursor: pointer;
+    list-style: none;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+    transform: translateX(-200px);
+    transition: transform 0.5s linear;
+}
+
+.activeLi {
+    transition: transform 0.7s ease-out;
+}
+
+#home.activeLi {
+    transform: translateX(10px);
+}
+
+#about.activeLi {
+    transform: translateX(40px);
+}
+
+#contact.activeLi {
+    transform: translateX(70px);
+}
+
+#home::marker {
+    content: url('house.png');
+}
+
+#about::marker {
+    content: url('user.png');
+}
+
+#contact::marker {
+    content:url('email.png');
+}
+
+.page {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('bg.jpg');
+    background-size:cover;
+    background-repeat: repeat;
+    position: relative;
+    z-index: 1;
+    transform-origin: top left;
+    transition: transform ease-in 0.5s;
+    min-height: 750px;
+}
+
+main {
+    margin: 80px;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    border: #ff7979 solid 10px;
+    border-radius: 20px;
+    margin: 10px 0px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.videoContainer {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#range {
+    display: block;
+    width: 90%;
+    background-color: rgb(128, 128, 128, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10%;
+    padding: 10px;
+}
+
+#play {
+    width: 90%;
+}
+
+#moveValue {
+    float:right;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    color: white;
+}
+
+.active {
+    transform-origin: top left;
+    transform: 
+        rotate(-25deg)
+    ;
+
+    transition: transform ease-in 0.5s;
+
+}
+
+.navButton {
+    position: absolute;
+    z-index: 2;
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+    background-color: #ff7979;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;  
+    transform: 
+        translate(-100px, -100px)
+    ;
+    transition: transform 0.5s ease-in;
+}
+
+.buttonActive {
+    transform: 
+        translate(-100px, -100px)
+        rotate(-90deg)
+    ;
+    transition: transform 0.5s ease-in;
+}
+
+a {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.controlsContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    width: 50%;
+}
+
+.page button {
+    border: solid 3px #ff7979;
+    width: content;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0px;
+    cursor: pointer;
+    background-color: white;
+    font-weight:700;
+}
+
+.controlsContainer > button {
+    margin: 15px 5px;
+}
+
+.muteSpeed {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 15px 0px;
+}
+
+.muteSpeed div {
+    flex: 1 1;
+}
+
+.muteSpeed input[type="range"]{
+    width: 70%;
+}
+
+.muteSpeed button {
+    border: 1px solid #ff7979; 
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+    margin: 0px 0px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(51, 51, 51, 0.641);
+    margin: 0px 10px;
+    float: left;
+}
