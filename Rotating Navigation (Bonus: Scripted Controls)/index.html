@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Scripted controls</title>
+        <meta charset="UTF-8"/>
+        <meta name="Author" content="Aya Ahmed"/>
+        <meta name="description" content="Scripted controls + Rotating Navigation as part of 50 projects in 50 days course"/>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <div class="navButton">
+            <img src="remove.png">
+            <img src="menu.png">
+        </div>
+        <nav>
+            <ul>
+                <li id="home">HOME</li>
+                <li id="about">ABOUT</li>
+                <li id="contact">CONTACT</li>
+            </ul>
+        </nav>
+        <div class="page">
+            <main>
+                <div class="videoContainer">
+                    <video preload poster="sea.png">
+                        <source src="sea.mp4" type="video/mp4">
+                        <p>Your browser does not support the video tag</p>
+                    </video>
+                    <!-- max will be determined by javascript according to video length. -->
+                    <!--<div id="play">-->
+                    <div id="range">
+                        <input type="range"
+                            id="play" 
+                            min="0" 
+                            max="" 
+                            value="0"
+                            step="1"> 
+                        <div id="moveValue">00:00:00</div>
+                    </div>  
+                </div>
+                <div class="controlsContainer">
+                    <button id="playBtn">PLAY</button>
+                    <div>
+                        <button id="goToStart">&lt;&lt;</button>
+                        <button id="rewind">&lt;</button>
+                        <button id="fastForward">&gt;</button>
+                        <button id="goToEnd">&gt;&gt;</button>
+                    </div>
+                    <button id="stopBtn">STOP</button>
+                </div>
+                <div class="muteSpeed">
+                    <div>    
+                        <input type="range"
+                            id="muteRange"
+                            min="0"
+                            max="1"
+                            value="0"
+                            step="0.1"
+                        > <button id="muteBtn">MUTE</button>
+                    </div>
+                    <div>    
+                        <input type="range"
+                            id="speedRange"
+                            min="0"
+                            max="2"
+                            value="1"
+                            step="0.25"
+                        > <span style="position: relative; top:-5px;">Speed</span>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <a href="https://www.flaticon.com/free-icons/delete" title="delete icons">Delete icons created by Pixel perfect - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by ariefstudio - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/contact" title="contact icons">Contact icons created by th studio - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/profile" title="profile icons">Profile icons created by Freepik - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/home-button" title="home button icons">Home button icons created by Kiranshastry - Flaticon</a>
+                <a href="https://www.freepik.com/free-photo/white-painted-wall-texture-background_18416494.htm#query=background&position=1&from_view=keyword">Image by rawpixel.com on Freepik</a> 
+            </footer>
+        </div>
+    <script src="index.js"></script>
+    </body>
+</html>
