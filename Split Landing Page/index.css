@@ -1,0 +1,80 @@
+html {
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+section {
+    transition: flex 1s linear;
+    position: relative;
+}
+
+#first {
+    background: url('ps.jpg');
+    background-size: cover;
+    flex: 1 1;
+    position: relative;
+    z-index: 1;
+}
+
+#second {
+    background: url('xbox.jpg');
+    background-size: cover;
+    flex: 1 1;
+    position: relative;
+    z-index: 0;
+}
+
+#first:hover {
+    flex: 3 1;
+    z-index: 2;
+}
+
+#second:hover {
+    flex: 3 1;
+    z-index: 2;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 150px;
+}
+
+#second .content{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#first .content{
+    background-color: rgba(38, 1, 249, 0.7);
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 64px;
+    color: white;
+    white-space: nowrap;
+}
+
+button {
+    border: 4px white solid;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 20px 60px;
+}
