@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: cornflowerblue;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.searchContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 20%;
+}
+
+.searchtxt {
+    width: 0px;
+    border: 0px;
+    transition: width 0.5s linear;
+    font-size: 20px;
+    padding: 0px;
+}
+
+.active {
+    width: 100%;
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px;
+    border: 0px;
+    background-color: white;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 2px;
+}
