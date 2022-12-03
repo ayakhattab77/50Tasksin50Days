@@ -12,6 +12,7 @@ CSS:
 3. Transitions
 4. pseudo-elements and content property
 5. positions and z-index
+6. Flexbox layout and percentages (responsive design)
 
 JavaScript: 
 1. fetch, async/await (dealing with APIs)
