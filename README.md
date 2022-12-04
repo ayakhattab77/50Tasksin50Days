@@ -24,6 +24,6 @@ JavaScript:
 6. Dynamically styling the web page
 7. The rest and spread operator
 8. Importing and exporting modules
-9. 
+
 
 Still going!
