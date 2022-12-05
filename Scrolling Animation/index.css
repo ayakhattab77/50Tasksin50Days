@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    padding: 0px;
+    background-color:aliceblue;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+main {
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    padding: 20px;
+}
+
+.box {
+    background-color: darkslategrey;
+    width: 400px;
+    height: 200px;
+    line-height: 200px;
+    margin: 30px 0px;
+    border-radius: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: transform 0.3s linear;
+}
+
+.box:nth-child(odd) {
+    transform: 
+        translateX(1000px)
+    ;
+}
+
+.box:nth-child(even) {
+    transform: 
+        translateX(-1000px)
+    ;
+}
+
+.show.box {
+    transform: translateX(0px);
+}
