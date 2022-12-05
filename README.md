@@ -25,6 +25,6 @@ JavaScript:
 5. Dynamically styling the web page
 6. The rest and spread operator
 7. Importing and exporting modules
-
+8. getBoundingClientRect() 
 
 Still going!
