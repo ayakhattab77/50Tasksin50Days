@@ -1,0 +1,36 @@
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: url('bg1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#loading {
+    position: absolute;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    backdrop-filter: blur(50px);
+}
+
+#percentage {
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 60px;
+    font-weight: bold;
+}
