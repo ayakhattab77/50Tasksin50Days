@@ -14,16 +14,17 @@ CSS:
 5. positions and z-index
 6. Flexbox layout and percentages (responsive design)
 7. Multiple different selectors 
+8. backdrop-filter property
+9. Centering using margin or flexbox
 
 JavaScript: 
 1. fetch, async/await (Asynchronous JS and dealing with APIs)
 2. forEach and for...in
-3. scale function
-4. Video element properties, methods and events
-5. Dynamically building the web page
-6. Dynamically styling the web page
-7. The rest and spread operator
-8. Importing and exporting modules
+3. Video element properties, methods and events
+4. Dynamically building the web page
+5. Dynamically styling the web page
+6. The rest and spread operator
+7. Importing and exporting modules
 
 
 Still going!
